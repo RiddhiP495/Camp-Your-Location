@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reserveSite</title>
+    <!-- jQuery API link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="js/reserveSite.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://kit.fontawesome.com/de2952116b.js" crossorigin="anonymous"></script>
+    
+
+
+</head>
+<body>
+
+
+<!--Header with navigation -->
+<nav>
+    <ul>
+        <li><a href="reserveSite.html">Reserve a Site</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Deals</a></li>
+    </ul>
+</nav>
+<section class="container">
+    <div class="tab" id="tab-id">
+        <h1>
+            <ul>
+                <li class="tablinks" onclick="openPage('choose-a-site',this)" id="defaultOpen"><a href="#">1.CHOOSE A
+                    SITE</a></li>
+                <li id="review" class="tablinks" onclick="openPage('review-and-pay',this)"><a href="#">2.REVIEW AND PAY</a></li>
+            </ul>
+        </h1>
+    </div>
+
+    <div class="tabcontent" id="choose-a-site">
+
+        <label>Filter by Equipment type:</label>
+        <select onchange="FilterByEquipment(this)" id="equipment-type">
+
+        </select>
+
+        <label>Filter by available nights:</label>
+        <select id="nights">
+            <option selected>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select>
+
+        <div id="AllSortedData">
+
+        </div>
+            <div id="siteData">
+                <!-- Display name and other details from api -->
+            </div>
+
+
+    </div>
+
+
+    <div id="review-and-pay" class="tabcontent">
+
+    </div>
+
+</section>
+</body>
+<script src="js/index.js" type="text/javascript"></script>
+<script src="js/reserveSite.js" type="text/javascript"></script>
+
+</html>
+

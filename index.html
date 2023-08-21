@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Ground Booking</title>
+
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- jQuery API link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+<body>
+
+<!--Header with navigation -->
+<nav>
+    <ul>
+        <li><a href="reserveSite.html">Reserve a Site</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Deals</a></li>
+    </ul>
+</nav>
+
+<main style="background-image: url(assets/campsite.jpeg);">
+    <div>
+        <h1> You don't have to go far to get away. </h1>
+        <div id="nested-grid">
+            <div>
+                <label>EQUIPMENT TYPE</label>
+                <div class="option">
+                    <select id="equipment-type" class="size">
+                    </select>
+                </div>
+
+            </div>
+            <div class="">
+                <label class="nights">NIGHTS</label>
+                <div class="option">
+                    <select id="nights" class="size1">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+                    </select>
+                </div>
+            </div>
+            <a onclick="NextOne()">
+                <button>RESERVE</button>
+            </a></div>
+    </div>
+</main>
+</body>
+
+<script src="js/index.js" type="text/javascript"></script>
+
+
+</html>

@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main{
+
+    height:100vh;
+    background-image: url(assets/campsite.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0px; 
+    padding: 0px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#nested-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    color: black;
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+     padding-top: 50px;
+     padding-bottom: 50px;
+    padding-left: 20px;
+    justify-content: center;
+    align-content: center;
+
+}
+button{
+    height: 35px;
+    width: 100px;
+    background-color: lightseagreen;
+    color: #FFFFFF;
+    text-align: center;
+}
+nav {
+    background-color: black;
+    padding: 20px;
+    
+}
+nav li{
+    display: inline; 
+    margin-right: 30px; 
+   
+ }
+
+ nav ul {
+    text-align: center; 
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ ul li{
+    display: inline; 
+    margin-right: 30px; 
+    color: black;
+    font-size: 20px;
+    padding-left: 20px;
+ }
+
+ nav li a{
+    /* remove the underline */
+    text-decoration:underline;
+    text-align: center;
+   /* change text to uppercase */
+   text-transform:uppercase;
+   font-size:13px;
+   color: white;
+}
+
+/* .tabcontent{
+    padding: 20px;
+    
+} */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 50px 20px;
+    height: 100%;
+}
+
+
+.size{
+
+    margin-left: 85px;
+    width: 100%;
+}
+.size1{
+    width: 30%;
+}
+.nights{
+
+    margin-left: -30px;
+}
+
+.container{
+
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.display{
+
+    margin-top: 35px;
+    display: flex;
+    border: 2px solid #c6c6c6;
+    padding: 20px;
+}
+
+.img{
+
+    width: 180px;
+    height: 100px;
+}
+
+.display1{
+
+    margin-left: 20px;
+}
+
+.detail{
+
+    margin-bottom: 15px;
+}
+.btn{
+
+    margin-left: 116px;
+    margin-top: 43px;
+    background-color: #c6c6c6;
+    color: black;
+}
+
+.tablesize{
+
+width: 100%;
+
+}
+
+.fromdetail{
+    margin-bottom: 20px;
+}
+
+.fromnumber{
+
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 10px;
+    width: 48px;
+    border: 2px solid blue;
+}
+.text{
+
+    color: #c6c6c6;
+    margin-bottom: 20px;
+}
